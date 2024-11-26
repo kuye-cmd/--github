@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    10. 使用 prompt 输入若干学生的成绩（输入 0 表示结束输入），计算并输出平均分、最高分和最低分。
+</body>
+<script>
+    var sum=Number(prompt("输入成绩"));
+    var max=sum;
+    var min=sum;
+    var v=0;
+    for(var i=1;1;i++){
+        v+=sum;
+        // max = prompt("输入成绩")
+        if(max<sum){max=sum}
+        if(min>sum && sum!=0){min=sum}
+        if(sum==0){break}
+        sum=Number(prompt("输入成绩"));
+    }
+    v=v/(i-1);
+    console.log(max,min,v);
+</script>
+</html>

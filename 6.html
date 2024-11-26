@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 6. 使用 prompt 输入一个整数 n，查找并打印出小于等于 n 的所有素数。 -->
+</body>
+    <script>
+        var a=Number(prompt("整数"))
+        for(var i=2 ; i<a; i++){
+            for(var x=2;x<i;x++){
+                if(i%x==0){
+                    break
+                }
+            }
+            if(i==x){
+                console.log(i);
+            }
+        }
+    </script>
+</html>

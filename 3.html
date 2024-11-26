@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. 使用 prompt 输入一个 0 到 100 之间的整数表示学生的成绩，根据成绩使用 alert 输出相应的等级（A, B, C, D, F）。例如，90-100 为 A，80-89 为 B，以此类推。 -->
+</body>
+<script>
+    var a = Number(prompt("输入一个0-100之间的整数"));
+    if (a<=100 && a>=90) {
+        alert('A')
+    } else if(a<=89 && a>=80) {
+        alert('B')
+    }else if(a<=79 && a>=70) {
+        alert('C')
+    } else if(a<=69 && a>=60) {
+        alert('D')
+    } else if(a<60) {
+        alert('F')
+    }
+</script>
+</html>
